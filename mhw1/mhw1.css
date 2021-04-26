@@ -1,0 +1,338 @@
+body {
+    color:rgba(25, 60, 70, 0.8);
+    font-family: 'Lato', sans-serif;
+    font-size:25px;
+    font-style:normal;
+    margin: 0;
+}
+@media (max-width: 500px) {
+    body {
+      font-size: 14px;
+    }
+}
+header {
+    color: darkgreen;
+    background-image: url(https://citynews-pisatoday.stgy.ovh/~media/original-hi/68978935007355/concessionaria-auto-2.jpg);
+    background-size: cover;
+    background-position:center;
+    height:600px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 500px) {
+    header {
+      height: 350px;
+      line-height: 1.2;
+    }
+}
+#overlay{
+    background-color:rgba(0,0,0,0.3);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+
+ nav{
+   background-color:rgba(255, 255, 255, 0.6);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    
+
+    color: darkgreen;
+    font-size: 1.2em;
+    padding:20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  
+
+#logo{
+    font-family: 'Yeseva One', cursive;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+@media (max-width: 500px) {
+    #logo {
+      height:20px;
+    }
+}
+
+
+#logo img{
+    width: 50px;
+    height:50px;
+    margin-bottom: -15px;
+}
+
+@media (max-width: 500px) {
+    #logo img{
+      width: 20px;
+      height:20px;
+      margin-bottom: -5px;
+    }
+}
+
+#links a,
+#links1 a{
+    text-decoration: none;
+    margin: 5px;
+    font-size: 0.8em;
+}
+
+a.button{
+    color: darkgreen;
+    cursor:pointer;
+    padding:13px 15px;
+    border:3px white;
+}
+
+a.button:hover{
+    background-color: darkgreen;
+    color:rgb(255, 255, 255);
+    border-radius: 75px;
+}
+
+#menu {
+    display: none;
+  }
+  
+  #menu div {
+    width: 20px;
+    height: 3px;
+    background-color: darkgreen;
+    margin: 5px 0;
+  }
+  
+@media (max-width: 500px) {
+    #links, #links1 {
+      display: none;
+    }
+   #menu {
+      display: block;
+    }
+}
+
+header h1,
+header h2{
+    font-size:1.1em;
+    line-height: 1.5;
+    height:auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+}
+
+@media (max-width: 500px) {
+    header h1{
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+}
+@media (max-width: 500px) {
+   header h2 a.button{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+}
+header h1 strong {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0.7px;
+    text-shadow: 3px 3px darkgreen;
+}
+
+header h2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -60px;  
+}
+
+h2 a.button{
+    text-decoration: none;
+    color: darkgreen;
+    font-size: .8em;
+    font-weight: bold;
+    border-radius: 100px;
+    margin: 10px 70px;
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+h2 a.button:hover{
+    background-color: #006400;
+    color:rgb(255, 255, 255);
+}
+
+section {
+    margin:60px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    section{
+        font-size: 1.5em;
+     }
+}
+
+#main h1 {
+    font-size:1.7em;
+    font-weight: bold;
+    color:rgba(0,100,0,.8);
+}
+
+#main p{
+    font-size: .8em;
+    letter-spacing: 1px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 60px;
+    width:50%;
+}
+
+@media (max-width: 500px) {
+    #main p{
+        width: auto;
+     }
+}
+#details,
+#details2{
+    display:flex;
+    justify-content: space-between;
+}
+
+#details div,
+#details2 div{ 
+    flex-grow: 1;
+    padding: 20px;
+    width: 300px;
+}
+
+
+#details img{
+    width:400px;
+    height:300px;
+}
+
+@media (max-width: 500px) {
+    #details img{
+        width: 150px;
+        height: 125px;;
+     }
+}
+
+#details2 img{
+    width:100px;
+    height:100px;
+}
+
+@media (max-width: 500px) {
+    #details2 img{
+        width: 75px;
+        height: 75px;;
+     }
+}
+#details h1,
+#details2 h1{
+    font-size:1.5em ;
+    color:#006600;
+}
+
+#details p{
+    text-align: center;
+    color:black;
+    font-size:0.8em;
+}
+
+@media (max-width: 500px) {
+    #details, #details2 {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+
+article #map {
+    height: 60vh;
+    width: auto;
+    margin: 10vh;
+  }
+
+article h3{
+    color: darkgreen;
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size:  2em;
+}
+
+@media (max-width: 500px) {
+    article #map{
+      margin: 3vh;
+    }
+}
+
+footer{
+    background-color: rgb(81, 98, 50);
+    color:rgba(255,255,255,.7);
+    padding:40px;
+    text-align: center;
+}
+
+footer h1{
+    font-size: 25px;
+}
+
+footer h2{
+    font-size: 1.1em;
+}
+
+#info{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    #info {
+      flex-direction: column;
+    }
+}
+
+#info img{
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 500px) {
+    #info img{
+      width: 30px;
+      height: 30px;
+    }
+}
+
+#info p{
+    font-size: 16px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+}
